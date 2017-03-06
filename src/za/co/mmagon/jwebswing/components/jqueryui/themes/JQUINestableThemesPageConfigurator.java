@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -37,8 +37,8 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
                    pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesNestablePlugin/wiki",
                    pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
                    pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesNestablePlugin.jar/download",
-                   pluginIconUrl = "bower_components/css/theming/themeroller_icon.jpg",
-                   pluginIconImageUrl = "bower_components/css/theming/themeroller_example.jpg",
+                   pluginIconUrl = "css/theming/themeroller_icon.jpg",
+                   pluginIconImageUrl = "css/theming/themeroller_example.jpg",
                    pluginLastUpdatedDate = "2017/03/04"
 )
 public class JQUINestableThemesPageConfigurator extends PageConfigurator
