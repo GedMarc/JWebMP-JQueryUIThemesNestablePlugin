@@ -22,19 +22,17 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * The Dark Hive theme to JQuery UI
  *
- * @since 2012/02/04
- * @version
  * @author MMagon
- *
+ * @since 2012/02/04
  */
 class RedmondThemeNestable extends Theme
 {
 
-    public RedmondThemeNestable()
-    {
-        super("Redmond", "uiredmond", "css/theming/images/theme_30_redmond.png", "", "css/theming/images/theme_90_redmond.png");
-        getCssReferences().add(new CSSReference("redmondTheme", 1.114, "css/theming/ui_redmond_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css"));
+	public RedmondThemeNestable()
+	{
+		super("Redmond", "uiredmond", "css/theming/images/theme_30_redmond.png", "", "css/theming/images/theme_90_redmond.png");
+		getCssReferences().add(new CSSReference("redmondTheme", 1.114, "css/theming/ui_redmond_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css"));
 
-    }
+	}
 
 }

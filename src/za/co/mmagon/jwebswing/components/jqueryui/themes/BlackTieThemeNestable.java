@@ -22,19 +22,19 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
-public class BlackTieThemeNestable extends Theme {
+public class BlackTieThemeNestable extends Theme
+{
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    public BlackTieThemeNestable() {
-        super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
-        getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
-    }
+	public BlackTieThemeNestable()
+	{
+		super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
+	}
 
 }

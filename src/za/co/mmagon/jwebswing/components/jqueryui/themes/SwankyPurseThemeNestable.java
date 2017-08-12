@@ -22,19 +22,17 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
 /**
  * Implements the UI Darkness Theme
  *
- * @since 2014/07/05
- * @version 1.0
  * @author MMagon
- *
- *
+ * @version 1.0
+ * @since 2014/07/05
  */
 class SwankyPurseThemeNestable extends Theme
 {
 
-    public SwankyPurseThemeNestable()
-    {
-        super("Swanky Purse", "uiswankypurse", "css/theming/images/theme_30_swanky_purse.png", "", "css/theming/images/theme_90_swanky_purse.png");
-        getCssReferences().add(new CSSReference("swankypurseTheme", 1.114, "css/theming/ui_swankypurse_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/swanky-purse/jquery-ui.css"));
-    }
+	public SwankyPurseThemeNestable()
+	{
+		super("Swanky Purse", "uiswankypurse", "css/theming/images/theme_30_swanky_purse.png", "", "css/theming/images/theme_90_swanky_purse.png");
+		getCssReferences().add(new CSSReference("swankypurseTheme", 1.114, "css/theming/ui_swankypurse_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/swanky-purse/jquery-ui.css"));
+	}
 
 }
