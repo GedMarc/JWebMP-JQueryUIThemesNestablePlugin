@@ -41,14 +41,14 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 )
 public class JQUINestableThemesPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	public JQUINestableThemesPageConfigurator()
 	{
-	
+		//Nothiung Needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
