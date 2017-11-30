@@ -33,61 +33,6 @@
         </repository>
     </repositories>
 
-    <profiles>
-        <profile>
-            <id>development</id>
-            <properties>
-            </properties>
-
-        </profile>
-        <profile>
-            <id>unittest-profile</id>
-            <properties>
-            </properties>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-dependency-plugin</artifactId>
-                        <version>${maven.dependency.version}</version>
-                        <executions>
-                            <execution>
-                                <id>copy-dependencies</id>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                    <goal>copy-dependencies</goal>
-                                </goals>
-                                <configuration>
-                                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                    <includeScope>runtime</includeScope>
-                                    <overWriteReleases>true</overWriteReleases>
-                                    <overWriteSnapshots>true</overWriteSnapshots>
-                                    <overWriteIfNewer>true</overWriteIfNewer>
-                                    <stripVersion>true</stripVersion>
-                                </configuration>
-                            </execution>
-
-                            <execution>
-                                <id>copy-test-libs</id>
-                                <phase>generate-test-resources</phase>
-                                <goals>
-                                    <goal>copy-dependencies</goal>
-                                </goals>
-                                <configuration>
-                                    <outputDirectory>${project.build.directory}/test-libs</outputDirectory>
-                                    <excludeScope>compile</excludeScope>
-                                    <excludeTransitive>true</excludeTransitive>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-
-        </profile>
-
-    </profiles>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src</src.dir>
@@ -234,4 +179,21 @@
     <ciManagement>
         <system>TeamCity</system>
         <url>http://jwebswing.com/teamcity</url>
-    </ciManagement>    <reporting>        <plugins>            <plugin>                <groupId>org.jacoco</groupId>                <artifactId>jacoco-maven-plugin</artifactId>     <version>0.7.9</version>           <reportSets>                    <reportSet>                        <reports>                            <!-- select non-aggregate reports -->                            <report>report</report>                        </reports>                    </reportSet>                </reportSets>            </plugin>        </plugins>    </reporting></project>
+    </ciManagement>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>                            <!-- select non-aggregate reports -->
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+        </plugins>
+    </reporting>
+</project>
