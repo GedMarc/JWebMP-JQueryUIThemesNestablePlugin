@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * The Dark Hive theme to JQuery UI
+ * The Start Theme from JQuery Theme Roller
  *
  * @author MMagon
- * @since 2012/02/04
+ * @version 1.0
+ * @since 2014/07/05
  */
-class RedmondThemeNestable extends Theme
+class StartThemeNestable extends Theme
 {
 
-	public RedmondThemeNestable()
+	public StartThemeNestable()
 	{
-		super("Redmond", "uiredmond", "css/theming/images/theme_30_redmond.png", "", "css/theming/images/theme_90_redmond.png");
-		getCssReferences().add(new CSSReference("redmondTheme", 1.114, "css/theming/ui_redmond_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/redmond/jquery-ui.css"));
-
+		super("Start", "uistart", "css/theming/images/theme_30_start_menu.png", "", "css/theming/images/theme_90_start_menu.png");
+		getCssReferences().add(new CSSReference("startTheme", 1.114, "css/theming/ui_start_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css"));
 	}
-
 }

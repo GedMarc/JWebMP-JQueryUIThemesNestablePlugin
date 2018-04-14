@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,10 +14,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
  * Implements the UI Darkness Theme
@@ -26,13 +26,15 @@ import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class ExciteBikeThemeNestable extends Theme
+public class BlackTieThemeNestable extends Theme
 {
 
-	public ExciteBikeThemeNestable()
+	private static final long serialVersionUID = 1L;
+
+	public BlackTieThemeNestable()
 	{
-		super("Excite Bike", "uiexcitebike", "css/theming/images/theme_30_excite_bike.png", "", "css/theming/images/theme_90_excite_bike.png");
-		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "css/theming/ui_eggplant_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/eggplant/jquery-ui.css"));
+		super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
 	}
 
 }

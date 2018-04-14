@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI-Lightness Theme from JQuery UI Theme Roller
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class LightnessThemeNestable extends Theme
+class OvercastThemeNestable extends Theme
 {
 
-	public LightnessThemeNestable()
+	public OvercastThemeNestable()
 	{
-		super("UI-Lightness", "uilightness", "css/theming/images/theme_30_ui_light.png", "", "css/theming/images/theme_90_ui_light.png");
-		getCssReferences().add(new CSSReference("lightnessTheme", 1.114, "css/theming/ui_lightness_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css"));
+		super("Overcast", "uiovercast", "css/theming/images/theme_30_overcast.png", "", "css/theming/images/theme_90_overcast.png");
+		getCssReferences().add(new CSSReference("overcastTheme", 1.114, "css/theming/ui_overcast_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/overcast/jquery-ui.css"));
 	}
 
 }

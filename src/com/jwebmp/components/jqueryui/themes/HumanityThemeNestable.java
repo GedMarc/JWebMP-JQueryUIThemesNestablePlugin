@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,24 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * The Start Theme from JQuery Theme Roller
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class SunnyThemeNestable extends Theme
+class HumanityThemeNestable extends Theme
 {
 
-	public SunnyThemeNestable()
+	public HumanityThemeNestable()
 	{
-		super("Sunny", "uisunny", "css/theming/images/theme_30_sunny.png", "", "css/theming/images/theme_30_sunny.png");
-		getCssReferences().add(new CSSReference("sunnyTheme", 1.114, "css/theming/ui_sunny_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/sunny/jquery-ui.css"));
+		super("Humanity", "uihumanity", "css/theming/images/theme_30_humanity.png", "", "css/theming/images/theme_90_humanity.png");
+		getCssReferences().add(new CSSReference("humanityTheme", 1.114, "css/theming/ui_humanity_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/humanity/jquery-ui.css"));
 	}
+
 }

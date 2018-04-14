@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * The Dark Hive theme to JQuery UI
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
- * @since 2012/02/04
+ * @version 1.0
+ * @since 2014/07/05
  */
-class PepperGrinderThemeNestable extends Theme
+class SwankyPurseThemeNestable extends Theme
 {
 
-	public PepperGrinderThemeNestable()
+	public SwankyPurseThemeNestable()
 	{
-		super("Pepper Grinder", "uipeppergrinder", "css/theming/images/theme_30_pepper_grinder.png", "", "css/theming/images/theme_90_pepper_grinder.png");
-		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.114, "css/theming/ui_peppergrinder_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css"));
-
+		super("Swanky Purse", "uiswankypurse", "css/theming/images/theme_30_swanky_purse.png", "", "css/theming/images/theme_90_swanky_purse.png");
+		getCssReferences().add(new CSSReference("swankypurseTheme", 1.114, "css/theming/ui_swankypurse_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/swanky-purse/jquery-ui.css"));
 	}
 
 }

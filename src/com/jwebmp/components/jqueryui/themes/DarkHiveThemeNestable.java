@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI-Lightness Theme from JQuery UI Theme Roller
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class SouthStreetThemeNestable extends Theme
+class DarkHiveThemeNestable extends Theme
 {
 
-	public SouthStreetThemeNestable()
+	public DarkHiveThemeNestable()
 	{
-		super("South Street", "uisouthstreet", "css/theming/images/theme_30_south_street.png", "", "css/theming/images/theme_90_south_street.png");
-		getCssReferences().add(new CSSReference("southstreetTheme", 1.114, "css/theming/ui_southstreet_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/south-street/jquery-ui.css"));
+		super("Dark Hive", "darkhive", "css/theming/images/theme_30_dark_hive.png", "", "css/theming/images/theme_90_dark_hive.png");
+		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.114, "css/theming/ui_darkhive_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css"));
 
 	}
 

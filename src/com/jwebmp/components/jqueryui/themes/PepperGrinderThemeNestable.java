@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,25 +14,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.htmlbuilder.css.themes.Theme;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class BlizterThemeNestable extends Theme
+class PepperGrinderThemeNestable extends Theme
 {
 
-	public BlizterThemeNestable()
+	public PepperGrinderThemeNestable()
 	{
-		super("Blitzer", "uiblitzer", "css/theming/images/theme_30_blitzer.png", "", "css/theming/images/theme_90_blitzer.png");
-		getCssReferences().add(new CSSReference("BlitzerTheme", 1.114, "css/theming/ui_blitzer_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/blitzer/jquery-ui.css"));
+		super("Pepper Grinder", "uipeppergrinder", "css/theming/images/theme_30_pepper_grinder.png", "", "css/theming/images/theme_90_pepper_grinder.png");
+		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.114, "css/theming/ui_peppergrinder_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css"));
+
 	}
 
 }

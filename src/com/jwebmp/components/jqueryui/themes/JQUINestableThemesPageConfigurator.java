@@ -14,17 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.jqueryui.themes;
+package com.jwebmp.components.jqueryui.themes;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
  * @since 28 Feb 2017
  */
-@PluginInformation(pluginName = "JQuery UI Themes (Nestable)", pluginUniqueName = "jquery-ui-themes-nestable",
+@PluginInformation(pluginName = "JQuery UI Themes (Nestable)",
+		pluginUniqueName = "jquery-ui-themes-nestable",
 		pluginDescription = "ThemeRoller allows you to design custom jQuery UI themes for tight integration in your projects. To create a custom theme, select the Roll your own tab and tweak the settings. As you work, the UI components to the right will update to reflect your design and you can download your theme whenever you like.",
 		pluginVersion = "1.12.1",
 		pluginDependancyUniqueIDs = "jquery-ui",
@@ -37,9 +38,9 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesNestablePlugin.jar/download",
 		pluginIconUrl = "css/theming/themeroller_icon.jpg",
 		pluginIconImageUrl = "css/theming/themeroller_example.jpg",
-		pluginLastUpdatedDate = "2017/03/04"
-)
-public class JQUINestableThemesPageConfigurator extends PageConfigurator
+		pluginLastUpdatedDate = "2017/03/04")
+public class JQUINestableThemesPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
