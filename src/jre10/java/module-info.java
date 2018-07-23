@@ -1,3 +1,6 @@
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.jqueryui.themes.JQUINestableThemesPageConfigurator;
+
 module com.jwebmp.plugins.jqueryui {
 
 	exports com.jwebmp.plugins.jqueryui.themes;
@@ -8,4 +11,7 @@ module com.jwebmp.plugins.jqueryui {
 
 	requires java.validation;
 	requires java.logging;
+
+	provides IPageConfigurator with JQUINestableThemesPageConfigurator;
+
 }
