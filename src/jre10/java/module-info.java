@@ -13,5 +13,5 @@ module com.jwebmp.plugins.jqueryui {
 	requires java.logging;
 
 	provides IPageConfigurator with JQUINestableThemesPageConfigurator;
-
+	opens com.jwebmp.plugins.jqueryui.themes to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
