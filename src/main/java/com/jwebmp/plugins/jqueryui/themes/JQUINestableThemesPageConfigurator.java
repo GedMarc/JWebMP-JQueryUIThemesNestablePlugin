@@ -33,16 +33,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "jquery-ui",
 		pluginCategories = "jquery, ui, jquery-ui",
 		pluginSubtitle = "JQuery UI Themes that can be nested",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesNestablePlugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-JQueryUIThemesNestablePlugin",
 		pluginSourceUrl = "http://jqueryui.com/",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-JQueryUIThemesNestablePlugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQueryUIThemesNestablePlugin/wiki",
 		pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesNestablePlugin.jar/download",
 		pluginIconUrl = "css/theming/themeroller_icon.jpg",
 		pluginIconImageUrl = "css/theming/themeroller_example.jpg",
 		pluginLastUpdatedDate = "2017/03/04")
 public class JQUINestableThemesPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<JQUINestableThemesPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
