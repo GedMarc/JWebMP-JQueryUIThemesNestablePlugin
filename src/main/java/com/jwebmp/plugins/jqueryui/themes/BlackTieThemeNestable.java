@@ -30,7 +30,6 @@ public class BlackTieThemeNestable
 		extends Theme
 {
 
-	private static final long serialVersionUID = 1L;
 
 	public BlackTieThemeNestable()
 	{
