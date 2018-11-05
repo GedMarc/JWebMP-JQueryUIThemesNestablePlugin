@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * The Dark Hive theme to JQuery UI
+ * Implements the UI dotluv Theme
  *
  * @author MMagon
- * @since 2012/02/04
+ * @version 1.0
+ * @since 2014/07/05
  */
-class LeFrogThemeNestable
+class DotLuvThemeNestable
 		extends Theme
 {
 
-	public LeFrogThemeNestable()
+	public DotLuvThemeNestable()
 	{
-		super("LeFrog", "uilefrog", "css/theming/images/theme_30_le_frog.png", "", "css/theming/images/theme_90_le_frog.png");
+		super("Dot Luv", "uidotluv", "css/theming/images/theme_30_dot_luv.png", "", "css/theming/images/theme_90_dot_luv.png");
 		getCssReferences().add(
-				new CSSReference("lefrogTheme", 1.114, "css/theming/ui_lefrog_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/le-frog/jquery-ui.css"));
-
+				new CSSReference("dotluvTheme", 1.114, "css/theming/ui_dotluv_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dot-luv/jquery-ui.css"));
 	}
 
 }

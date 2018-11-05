@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class TrontasticThemeNestable
+class LeFrogThemeNestable
 		extends Theme
 {
 
-	public TrontasticThemeNestable()
+	public LeFrogThemeNestable()
 	{
-		super("Trontastic", "uitrontastic", "css/theming/images/theme_30_trontastic.png", "", "css/theming/images/theme_90_trontastic.png");
-		getCssReferences().add(new CSSReference("trontasticTheme", 1.114, "css/theming/ui_trontastic_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/trontastic/jquery-ui.css"));
+		super("LeFrog", "uilefrog", "css/theming/images/theme_30_le_frog.png", "", "css/theming/images/theme_90_le_frog.png");
+		getCssReferences().add(
+				new CSSReference("lefrogTheme", 1.114, "css/theming/ui_lefrog_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/le-frog/jquery-ui.css"));
+
 	}
 
 }

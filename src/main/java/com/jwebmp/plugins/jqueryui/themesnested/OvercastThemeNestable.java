@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,15 +26,15 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class VaderThemeNestable
+class OvercastThemeNestable
 		extends Theme
 {
 
-	public VaderThemeNestable()
+	public OvercastThemeNestable()
 	{
-		super("Vader", "uivader", "css/theming/images/theme_30_vader.png", "", "css/theming/images/theme_90_vader.png");
-		getCssReferences().add(
-				new CSSReference("vaderTheme", 1.114, "css/theming/ui_vader_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/vader/jquery-ui.css"));
+		super("Overcast", "uiovercast", "css/theming/images/theme_30_overcast.png", "", "css/theming/images/theme_90_overcast.png");
+		getCssReferences().add(new CSSReference("overcastTheme", 1.114, "css/theming/ui_overcast_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/overcast/jquery-ui.css"));
 	}
 
 }

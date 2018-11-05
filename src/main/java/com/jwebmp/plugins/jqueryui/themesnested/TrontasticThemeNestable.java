@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * The Dark Hive theme to JQuery UI
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
- * @since 2012/02/04
+ * @version 1.0
+ * @since 2014/07/05
  */
-class PepperGrinderThemeNestable
+class TrontasticThemeNestable
 		extends Theme
 {
 
-	public PepperGrinderThemeNestable()
+	public TrontasticThemeNestable()
 	{
-		super("Pepper Grinder", "uipeppergrinder", "css/theming/images/theme_30_pepper_grinder.png", "", "css/theming/images/theme_90_pepper_grinder.png");
-		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.114, "css/theming/ui_peppergrinder_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css"));
-
+		super("Trontastic", "uitrontastic", "css/theming/images/theme_30_trontastic.png", "", "css/theming/images/theme_90_trontastic.png");
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.114, "css/theming/ui_trontastic_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/trontastic/jquery-ui.css"));
 	}
 
 }

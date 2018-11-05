@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * Implements the UI-Lightness Theme from JQuery UI Theme Roller
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class OvercastThemeNestable
+class LightnessThemeNestable
 		extends Theme
 {
 
-	public OvercastThemeNestable()
+	public LightnessThemeNestable()
 	{
-		super("Overcast", "uiovercast", "css/theming/images/theme_30_overcast.png", "", "css/theming/images/theme_90_overcast.png");
-		getCssReferences().add(new CSSReference("overcastTheme", 1.114, "css/theming/ui_overcast_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/overcast/jquery-ui.css"));
+		super("UI-Lightness", "uilightness", "css/theming/images/theme_30_ui_light.png", "", "css/theming/images/theme_90_ui_light.png");
+		getCssReferences().add(new CSSReference("lightnessTheme", 1.114, "css/theming/ui_lightness_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css"));
 	}
 
 }

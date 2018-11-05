@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class DarknessThemeNestable
+class PepperGrinderThemeNestable
 		extends Theme
 {
 
-	public DarknessThemeNestable()
+	public PepperGrinderThemeNestable()
 	{
-		super("UI-Darkness", "uidarkness", "css/theming/images/theme_30_ui_dark.png", "", "css/theming/images/theme_90_ui_dark.png");
-		getCssReferences().add(new CSSReference("darknessTheme", 1.114, "css/theming/ui_darkness_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-darkness/jquery-ui.css"));
+		super("Pepper Grinder", "uipeppergrinder", "css/theming/images/theme_30_pepper_grinder.png", "", "css/theming/images/theme_90_pepper_grinder.png");
+		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.114, "css/theming/ui_peppergrinder_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css"));
+
 	}
 
 }

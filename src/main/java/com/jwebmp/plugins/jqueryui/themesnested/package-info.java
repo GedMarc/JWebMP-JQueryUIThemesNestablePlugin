@@ -14,26 +14,4 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
-
-import com.jwebmp.core.base.references.CSSReference;
-import com.jwebmp.core.htmlbuilder.css.themes.Theme;
-
-/**
- * The Start Theme from JQuery Theme Roller
- *
- * @author MMagon
- * @version 1.0
- * @since 2014/07/05
- */
-class StartThemeNestable
-		extends Theme
-{
-
-	public StartThemeNestable()
-	{
-		super("Start", "uistart", "css/theming/images/theme_30_start_menu.png", "", "css/theming/images/theme_90_start_menu.png");
-		getCssReferences().add(
-				new CSSReference("startTheme", 1.114, "css/theming/ui_start_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/start/jquery-ui.css"));
-	}
-}
+package com.jwebmp.plugins.jqueryui.themesnested;

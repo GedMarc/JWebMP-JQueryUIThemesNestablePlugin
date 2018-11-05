@@ -1,9 +1,12 @@
 import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.plugins.jqueryui.themes.JQUINestableThemesPageConfigurator;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
+import com.jwebmp.plugins.jqueryui.themesnested.JQUINestableThemesPageConfigurator;
+import com.jwebmp.plugins.jqueryui.themesnested.implementations.JQueryUINestableThemesExclusionsModule;
 
-module com.jwebmp.plugins.jqueryui {
+module com.jwebmp.plugins.jqueryui.themes.nestable {
 
-	exports com.jwebmp.plugins.jqueryui.themes;
+	exports com.jwebmp.plugins.jqueryui.themesnested;
 
 	requires com.jwebmp.core;
 	requires com.jwebmp.logmaster;
@@ -11,7 +14,12 @@ module com.jwebmp.plugins.jqueryui {
 
 	requires java.validation;
 	requires java.logging;
+	requires com.jwebmp.guicedinjection;
 
 	provides IPageConfigurator with JQUINestableThemesPageConfigurator;
-	opens com.jwebmp.plugins.jqueryui.themes to com.fasterxml.jackson.databind,com.jwebmp.core;
+
+	provides IGuiceScanJarExclusions with JQueryUINestableThemesExclusionsModule;
+	provides IGuiceScanModuleExclusions with JQueryUINestableThemesExclusionsModule;
+
+	opens com.jwebmp.plugins.jqueryui.themesnested to com.fasterxml.jackson.databind, com.jwebmp.core;
 }

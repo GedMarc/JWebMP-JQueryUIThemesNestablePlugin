@@ -14,26 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * The Start Theme from JQuery Theme Roller
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class SunnyThemeNestable
+class CupertinoThemeNestable
 		extends Theme
 {
 
-	public SunnyThemeNestable()
+	public CupertinoThemeNestable()
 	{
-		super("Sunny", "uisunny", "css/theming/images/theme_30_sunny.png", "", "css/theming/images/theme_30_sunny.png");
-		getCssReferences().add(
-				new CSSReference("sunnyTheme", 1.114, "css/theming/ui_sunny_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/sunny/jquery-ui.css"));
+		super("Cupertino", "uicupertino", "css/theming/images/theme_30_cupertino.png", "", "css/theming/images/theme_90_cupertino.png");
+		getCssReferences().add(new CSSReference("CupertinoTheme", 1.114, "css/theming/ui_cupertino_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/cupertino/jquery-ui.css"));
 	}
+
 }

@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI-Lightness Theme from JQuery UI Theme Roller
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class LightnessThemeNestable
+class DarkHiveThemeNestable
 		extends Theme
 {
 
-	public LightnessThemeNestable()
+	public DarkHiveThemeNestable()
 	{
-		super("UI-Lightness", "uilightness", "css/theming/images/theme_30_ui_light.png", "", "css/theming/images/theme_90_ui_light.png");
-		getCssReferences().add(new CSSReference("lightnessTheme", 1.114, "css/theming/ui_lightness_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css"));
+		super("Dark Hive", "darkhive", "css/theming/images/theme_30_dark_hive.png", "", "css/theming/images/theme_90_dark_hive.png");
+		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.114, "css/theming/ui_darkhive_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css"));
+
 	}
 
 }

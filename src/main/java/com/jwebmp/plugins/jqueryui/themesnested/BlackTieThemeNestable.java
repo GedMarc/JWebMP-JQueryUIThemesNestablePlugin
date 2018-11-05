@@ -14,27 +14,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * The Dark Hive theme to JQuery UI
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
- * @since 2012/02/04
+ * @version 1.0
+ * @since 2014/07/05
  */
-class DarkHiveThemeNestable
+public class BlackTieThemeNestable
 		extends Theme
 {
 
-	public DarkHiveThemeNestable()
-	{
-		super("Dark Hive", "darkhive", "css/theming/images/theme_30_dark_hive.png", "", "css/theming/images/theme_90_dark_hive.png");
-		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.114, "css/theming/ui_darkhive_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css"));
 
+	public BlackTieThemeNestable()
+	{
+		super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
 	}
 
 }

@@ -14,27 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * The Start Theme from JQuery Theme Roller
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class BlizterThemeNestable
+class SunnyThemeNestable
 		extends Theme
 {
 
-	public BlizterThemeNestable()
+	public SunnyThemeNestable()
 	{
-		super("Blitzer", "uiblitzer", "css/theming/images/theme_30_blitzer.png", "", "css/theming/images/theme_90_blitzer.png");
+		super("Sunny", "uisunny", "css/theming/images/theme_30_sunny.png", "", "css/theming/images/theme_30_sunny.png");
 		getCssReferences().add(
-				new CSSReference("BlitzerTheme", 1.114, "css/theming/ui_blitzer_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/blitzer/jquery-ui.css"));
+				new CSSReference("sunnyTheme", 1.114, "css/theming/ui_sunny_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/sunny/jquery-ui.css"));
 	}
-
 }

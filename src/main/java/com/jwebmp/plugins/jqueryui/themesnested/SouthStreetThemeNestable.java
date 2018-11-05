@@ -14,27 +14,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themes;
+package com.jwebmp.plugins.jqueryui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI Darkness Theme
+ * Implements the UI-Lightness Theme from JQuery UI Theme Roller
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class HotSneaksThemeNestable
+class SouthStreetThemeNestable
 		extends Theme
 {
 
-	public HotSneaksThemeNestable()
+	public SouthStreetThemeNestable()
 	{
-		super("Hot Sneaks", "uihotsneaks", "css/theming/images/theme_30_hot_sneaks.png", "", "css/theming/images/theme_90_hot_sneaks.png");
-		getCssReferences().add(new CSSReference("hotsneaksTheme", 1.114, "css/theming/ui_hotsneaks_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/hot-sneaks/jquery-ui.css"));
+		super("South Street", "uisouthstreet", "css/theming/images/theme_30_south_street.png", "", "css/theming/images/theme_90_south_street.png");
+		getCssReferences().add(new CSSReference("southstreetTheme", 1.114, "css/theming/ui_southstreet_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/south-street/jquery-ui.css"));
+
 	}
 
 }
