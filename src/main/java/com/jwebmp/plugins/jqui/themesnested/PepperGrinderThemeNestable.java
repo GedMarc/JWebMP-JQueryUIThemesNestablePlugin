@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI dotluv Theme
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class DotLuvThemeNestable
+class PepperGrinderThemeNestable
 		extends Theme
 {
 
-	public DotLuvThemeNestable()
+	public PepperGrinderThemeNestable()
 	{
-		super("Dot Luv", "uidotluv", "css/theming/images/theme_30_dot_luv.png", "", "css/theming/images/theme_90_dot_luv.png");
-		getCssReferences().add(
-				new CSSReference("dotluvTheme", 1.114, "css/theming/ui_dotluv_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dot-luv/jquery-ui.css"));
+		super("Pepper Grinder", "uipeppergrinder", "css/theming/images/theme_30_pepper_grinder.png", "", "css/theming/images/theme_90_pepper_grinder.png");
+		getCssReferences().add(new CSSReference("peppergrinderTheme", 1.114, "css/theming/ui_peppergrinder_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/pepper-grinder/jquery-ui.css"));
+
 	}
 
 }

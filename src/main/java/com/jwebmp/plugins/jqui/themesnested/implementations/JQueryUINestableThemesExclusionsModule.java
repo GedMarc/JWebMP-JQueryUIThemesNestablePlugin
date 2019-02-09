@@ -1,4 +1,4 @@
-package com.jwebmp.plugins.jqueryui.themesnested.implementations;
+package com.jwebmp.plugins.jqui.themesnested.implementations;
 
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
 import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;

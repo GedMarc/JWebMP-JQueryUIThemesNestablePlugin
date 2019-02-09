@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,15 +26,15 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class SwankyPurseThemeNestable
+class HumanityThemeNestable
 		extends Theme
 {
 
-	public SwankyPurseThemeNestable()
+	public HumanityThemeNestable()
 	{
-		super("Swanky Purse", "uiswankypurse", "css/theming/images/theme_30_swanky_purse.png", "", "css/theming/images/theme_90_swanky_purse.png");
-		getCssReferences().add(new CSSReference("swankypurseTheme", 1.114, "css/theming/ui_swankypurse_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/swanky-purse/jquery-ui.css"));
+		super("Humanity", "uihumanity", "css/theming/images/theme_30_humanity.png", "", "css/theming/images/theme_90_humanity.png");
+		getCssReferences().add(new CSSReference("humanityTheme", 1.114, "css/theming/ui_humanity_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/humanity/jquery-ui.css"));
 	}
 
 }

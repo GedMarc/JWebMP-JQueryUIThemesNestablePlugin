@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,15 +26,15 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class ExciteBikeThemeNestable
+class TrontasticThemeNestable
 		extends Theme
 {
 
-	public ExciteBikeThemeNestable()
+	public TrontasticThemeNestable()
 	{
-		super("Excite Bike", "uiexcitebike", "css/theming/images/theme_30_excite_bike.png", "", "css/theming/images/theme_90_excite_bike.png");
-		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "css/theming/ui_eggplant_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/eggplant/jquery-ui.css"));
+		super("Trontastic", "uitrontastic", "css/theming/images/theme_30_trontastic.png", "", "css/theming/images/theme_90_trontastic.png");
+		getCssReferences().add(new CSSReference("trontasticTheme", 1.114, "css/theming/ui_trontastic_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/trontastic/jquery-ui.css"));
 	}
 
 }

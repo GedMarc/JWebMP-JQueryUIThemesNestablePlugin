@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,15 +26,16 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-class HotSneaksThemeNestable
+public class BlackTieThemeNestable
 		extends Theme
 {
 
-	public HotSneaksThemeNestable()
+
+	public BlackTieThemeNestable()
 	{
-		super("Hot Sneaks", "uihotsneaks", "css/theming/images/theme_30_hot_sneaks.png", "", "css/theming/images/theme_90_hot_sneaks.png");
-		getCssReferences().add(new CSSReference("hotsneaksTheme", 1.114, "css/theming/ui_hotsneaks_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/hot-sneaks/jquery-ui.css"));
+		super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
+		getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
 	}
 
 }

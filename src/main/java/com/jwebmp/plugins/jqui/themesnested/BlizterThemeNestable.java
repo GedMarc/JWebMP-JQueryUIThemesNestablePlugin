@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -26,16 +26,15 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @version 1.0
  * @since 2014/07/05
  */
-public class BlackTieThemeNestable
+class BlizterThemeNestable
 		extends Theme
 {
 
-
-	public BlackTieThemeNestable()
+	public BlizterThemeNestable()
 	{
-		super("Black Tie", "uiblacktie", "css/theming/images/theme_30_black_tie.png", "", "css/theming/images/theme_90_black_tie.png");
-		getCssReferences().add(new CSSReference("BlackTieTheme", 1.114, "css/theming/ui_blacktie_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/black-tie/jquery-ui.css"));
+		super("Blitzer", "uiblitzer", "css/theming/images/theme_30_blitzer.png", "", "css/theming/images/theme_90_blitzer.png");
+		getCssReferences().add(
+				new CSSReference("BlitzerTheme", 1.114, "css/theming/ui_blitzer_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/blitzer/jquery-ui.css"));
 	}
 
 }

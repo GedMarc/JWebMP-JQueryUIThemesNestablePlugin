@@ -14,27 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI-Lightness Theme from JQuery UI Theme Roller
+ * The Dark Hive theme to JQuery UI
  *
  * @author MMagon
- * @version 1.0
- * @since 2014/07/05
+ * @since 2012/02/04
  */
-class LightnessThemeNestable
+class LeFrogThemeNestable
 		extends Theme
 {
 
-	public LightnessThemeNestable()
+	public LeFrogThemeNestable()
 	{
-		super("UI-Lightness", "uilightness", "css/theming/images/theme_30_ui_light.png", "", "css/theming/images/theme_90_ui_light.png");
-		getCssReferences().add(new CSSReference("lightnessTheme", 1.114, "css/theming/ui_lightness_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/ui-lightness/jquery-ui.css"));
+		super("LeFrog", "uilefrog", "css/theming/images/theme_30_le_frog.png", "", "css/theming/images/theme_90_le_frog.png");
+		getCssReferences().add(
+				new CSSReference("lefrogTheme", 1.114, "css/theming/ui_lefrog_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/le-frog/jquery-ui.css"));
+
 	}
 
 }

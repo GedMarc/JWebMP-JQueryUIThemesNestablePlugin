@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
@@ -25,15 +25,15 @@ import com.jwebmp.core.htmlbuilder.css.themes.Theme;
  * @author MMagon
  * @since 2012/02/04
  */
-class DarkHiveThemeNestable
+class FlickThemeNestable
 		extends Theme
 {
 
-	public DarkHiveThemeNestable()
+	public FlickThemeNestable()
 	{
-		super("Dark Hive", "darkhive", "css/theming/images/theme_30_dark_hive.png", "", "css/theming/images/theme_90_dark_hive.png");
-		getCssReferences().add(new CSSReference("DarkHiveTheme", 1.114, "css/theming/ui_darkhive_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/dark-hive/jquery-ui.css"));
+		super("Flick", "uiflick", "css/theming/images/theme_30_flick.png", "", "css/theming/images/theme_90_flick.png");
+		getCssReferences().add(
+				new CSSReference("flickTheme", 1.114, "css/theming/ui_flick_theme.css", "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/flick/jquery-ui.css"));
 
 	}
 

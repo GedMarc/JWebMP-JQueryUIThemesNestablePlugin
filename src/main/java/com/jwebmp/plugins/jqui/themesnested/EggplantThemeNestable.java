@@ -14,28 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.plugins.jqueryui.themesnested;
+package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.base.references.CSSReference;
 import com.jwebmp.core.htmlbuilder.css.themes.Theme;
 
 /**
- * Implements the UI-Lightness Theme from JQuery UI Theme Roller
+ * Implements the UI Darkness Theme
  *
  * @author MMagon
  * @version 1.0
  * @since 2014/07/05
  */
-class SouthStreetThemeNestable
+class EggplantThemeNestable
 		extends Theme
 {
 
-	public SouthStreetThemeNestable()
+	public EggplantThemeNestable()
 	{
-		super("South Street", "uisouthstreet", "css/theming/images/theme_30_south_street.png", "", "css/theming/images/theme_90_south_street.png");
-		getCssReferences().add(new CSSReference("southstreetTheme", 1.114, "css/theming/ui_southstreet_theme.css",
-		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/south-street/jquery-ui.css"));
-
+		super("Eggplant", "uieggplant", "css/theming/images/theme_30_eggplant.png", "", "css/theming/images/theme_90_eggplant.png");
+		getCssReferences().add(new CSSReference("eggplantTheme", 1.114, "css/theming/ui_eggplant_theme.css",
+		                                        "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/eggplant/jquery-ui.css"));
 	}
 
 }
