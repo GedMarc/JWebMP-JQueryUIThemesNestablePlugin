@@ -18,6 +18,7 @@ package com.jwebmp.plugins.jqui.themesnested;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -37,10 +38,14 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "http://jqueryui.com/",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQueryUIThemesNestablePlugin/wiki",
 		pluginOriginalHomepage = "http://jqueryui.com/themeroller/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/JQueryUIThemesNestablePlugin.jar/download",
-		pluginIconUrl = "css/theming/themeroller_icon.jpg",
-		pluginIconImageUrl = "css/theming/themeroller_example.jpg",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.jquery/jwebmp-jqui-themes-nestable",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginGroupId = "com.jwebmp.plugins.jquery",
+		pluginArtifactId = "jwebmp-jqui-themes-nestable",
+		pluginStatus = PluginStatus.Released
+)
 public class JQUINestableThemesPageConfigurator
 		implements IPageConfigurator<JQUINestableThemesPageConfigurator>
 {
