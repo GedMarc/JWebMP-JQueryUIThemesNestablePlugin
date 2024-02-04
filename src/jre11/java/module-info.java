@@ -5,7 +5,7 @@ module com.jwebmp.plugins.jqueryui.themes.nestable {
 	exports com.jwebmp.plugins.jqui.themesnested;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires java.logging;
